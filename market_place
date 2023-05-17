@@ -1,0 +1,51 @@
+License management
+	Your purchase of this product created a license that you can manage in AWS License Manager.
+	This may include viewing, granting access, and tracking usage of your entitlements.
+	
+License grants can be activated only when both the license administrator and the grant recipient have enabled 
+the AWS Marketplace Service Linked Role, or trusted access is enabled for AWS Marketplace in the management account 
+of your organization. You can enable this setting in the AWS Marketplace Console.
+
+
+Grant Software licence entitlements Deploy products through service Catalog  No need for individual subscritpions
+https://www.youtube.com/watch?v=BY3O1p6xHvo&t=9s
+https://aws.amazon.com/marketplace/features/managed-entitlements/?sc_channel=EL&sc_campaign=Demo_Deep_Dive_2021_vid&sc_medium=YouTube&sc_content=Video9798&sc_detail=MANAGEMENT_GOVERNANCE&sc_country=US
+
+
+How to establishes a trust relationship with AWS Marketplace?
+Step 1) https://aws.amazon.com/blogs/awsmarketplace/manage-your-aws-marketplace-license-entitlements-in-aws-license-manager/?sc_channel=EL&sc_campaign=Demo_Deep_Dive_2021_vid&sc_medium=YouTube&sc_content=Video9798&sc_detail=MANAGEMENT_GOVERNANCE&sc_country=US
+
+
+License grants can be activated only when both the license administrator and the grant recipient have enabled the AWS Marketplace Service Linked Role, or trusted access is enabled for AWS Marketplace in the management account of your organization. 
+You can enable this setting in the AWS Marketplace Console.
+
+
+
+What is license's Home Region in AWS licence manager?
+
+
+Granted licenses are licenses that you purchased from AWS Marketplace or directly from an independent software vendor (ISV). You can use License Manager to govern the use of these licenses and distribute rights of use to specific AWS accounts.
+
+
+
+https://aws.amazon.com/blogs/awsmarketplace/manage-your-aws-marketplace-license-entitlements-in-aws-license-manager/?sc_channel=EL&sc_campaign=Demo_Deep_Dive_2021_vid&sc_medium=YouTube&sc_content=Video9798&sc_detail=MANAGEMENT_GOVERNANCE&sc_country=US
+
+https://aws.amazon.com/blogs/mt/using-aws-control-tower-aws-service-catalog-and-aws-marketplace-to-deploy-aws-marketplace-license-subscriptions/?sc_channel=EL&sc_campaign=Demo_Deep_Dive_2021_vid&sc_medium=YouTube&sc_content=Video9798&sc_detail=MANAGEMENT_GOVERNANCE&sc_country=US
+
+https://aws.amazon.com/blogs/awsmarketplace/distribute-aws-marketplace-license-entitlements-to-your-organization-id/?sc_channel=EL&sc_campaign=Demo_Deep_Dive_2021_vid&sc_medium=YouTube&sc_content=Video9798&sc_detail=MANAGEMENT_GOVERNANCE&sc_country=US
+https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html
+https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html#grant-acceptance
+https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html#granted-licenses-views
+https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html#granted-licenses-views
+https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-using-service-linked-roles-license-manager.html
+https://aws.amazon.com/agreement/
+
+https://www.youtube.com/watch?v=BY3O1p6xHvo&t=9s
+
+https://www.youtube.com/watch?v=r7pdaM3OAAQ
+
+https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html?icmpid=docs_orgs_console
+
+Licence manager:
+#################
+https://docs.aws.amazon.com/license-manager/latest/userguide/getting-started.html
