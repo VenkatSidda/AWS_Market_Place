@@ -1,0 +1,57 @@
+=> License Home Region: All license resources are created and managed with us-east-1 (N. Virginia) as their home region.
+AWS Marketplace will automatically create a license on behalf of the customer when the customer subscribes a AMI
+=> AWS Marketplace provides the managed entitlements feature, if want to use managed entitlements for AWS Marketplace will first need to set up the following permissions
+
+=> service trusted access: ( only for Organization)
+   i) Only available for AWS Organizations with ‘all-features’ enabled. 
+                         AWS services for which you enable trusted access can access your 
+                         organization information and perform actions in multiple AWS accounts 
+                         within your organization.
+                        ii) Specific to managed entitlements, this gives AWS LM and MP the ability to keep track of 
+                          AWS Organizations activity on your behalf (e.g. knowing when accounts leave 
+                           your organization, validating granted licenses to accounts within an organization
+
+
+  service linked roles: (Both Account and Organization) (Manualle and automation)
+       i) Only available for AWS Organizations with ‘all-features’ enabled. 
+          AWS services for which you enable trusted access can access your organization 
+          information and perform actions in multiple AWS accounts within your organization.
+      ii) For managed entitlements, this permission is required so that AWS MP can successfully 
+          orchestrate license workflows and distributions across multiple AWS services, 
+          on the customer’s behalf. Similarly, 
+          this permission is required for AWS LM to auto-accept grants between 
+          management and member accounts in a ‘all features’ enabled organization.
+
+
+AWS Console specific instructions
+ In an AWS Organization with ‘all features’ enabled, you will need to create Service Linked Roles (SLR) for AWS License Manager and AWS Marketplace
+o AWS License Manager Console
+ SLR for License Manager will show up as a pop up modal the very first time you enter the LM console. You will not be able to use the AWS License Manager service without first enabling the AWS License Manager SLR.
+ Cross-account SLR for License Manager can be found in the settings page. Using the us-east-1 (N. Virginia) AWS region, select the ‘Link AWS Organization accounts’ to take advantage of the grant auto-accept feature.
+AWS Marketplace Console
+ SLR for Marketplace will be available to configure in the Settings page of AWS Marketplace. Select ‘Enable trusted access across your organization’
+
+
+
+API Specific instructions:
+ In an AWS Organization with ‘all features’ enabled, you will need to use your management account to enable trusted access for your organization.
+o API: EnableAWSServiceAccess
+ AWS Marketplace - License Management
+ AWS License Manager
+o Then create SLRs for AWS Marketplace and AWS License Manager
+ API: CreateServiceLinkedRole
+ AWS License Manager
+ AWSServiceRoleForAWSLicenseManagerRole (needed in all accounts)
+ AWSServiceRoleForAWSLicenseManagerMasterAccountRole (needed only in management account)
+ AWSLicenseManagerMemberAccountRolePolicy (needed in all accounts)
+ AWS Marketplace
+ AWSServiceRoleForMarketplaceLicenseManagement
+ In a consolidated billing organization, you will need to create Service Linked Roles (SLR) for AWS License Manager and AWS Marketplace across all accounts where you want to manage entitlements.
+o API: CreateServiceLinkedRole
+o AWS License Manager
+ AWSServiceRoleForAWSLicenseManagerRole
+o AWS Marketplace
+ AWSServiceRoleForMarketplaceLicenseManagement
+
+
+https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html
