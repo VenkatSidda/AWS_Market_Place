@@ -1,0 +1,10 @@
+https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-using-service-linked-roles-license-manager.html
+1) Enable trusted access b/w Marketplace & Organization
+   SLR will be crated
+2) Enable trusted access b/w Licence & Organization in an region (befor grant: Not enable at specific region)
+	A service-linked role is added to all of your AWS Organizations accounts.
+	A resource share is created and added to all of your AWS Organizations accounts. (in same region not for all regions)
+	Grants are enabled for distribution to your AWS Organizations ID. 
+	Grants are enabled to be automatically accepted when granted to your Organizations accounts or Organizations ID.
+3) Grant to permission for one accounts
+3) Grant to permission for one organization (It is asking to enable trusted access in N.V)
